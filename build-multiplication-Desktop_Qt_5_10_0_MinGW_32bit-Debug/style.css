@@ -1,0 +1,42 @@
+QPushButton{
+    background-color: #B0C4DE;
+    color: #000000;
+}
+QMainWindow{
+    background-color: #20B2AA;
+}
+QLabel{
+    color: #000000;
+}
+QLineEdit{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+QDateEdit{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+QWidget{
+    border-color: #AFEEEE;
+}
+Warning{
+    background-color: #AFEEEE;
+}
+hint{
+	background-color: #20B2AA;
+}
+About{
+	background-color: #AFEEEE;
+}
+QLineEdit{
+    background-color: #AFEEEE;
+}
+QMenuBar{
+	background-color: #AFEEEE;
+}
+QMenu{
+	background-color: #B0C4DE;
+}
+QTextEdit{
+    background-color: #AFEEEE;
+}

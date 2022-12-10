@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\warning.o
+./release\hint.o
+./release\main.o
+./release\mainwindow.o
+./release\warning.o
+./release\moc_mainwindow.o
+./release\moc_warning.o
+./release\moc_hint.o
+);
