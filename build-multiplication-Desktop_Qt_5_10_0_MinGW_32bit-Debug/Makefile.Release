@@ -233,11 +233,16 @@ release/moc_mainwindow.cpp: ../multiplication/warning.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/QString \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QMessageBox \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qmessagebox.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qdialog.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QRadioButton \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qradiobutton.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QFileDialog \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qfiledialog.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/qdir.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/qfileinfo.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qdialog.h \
 		../multiplication/mainwindow.h \
 		release/moc_predefs.h \
 		../../Qt/5.10.0/mingw53_32/bin/moc.exe
@@ -468,6 +473,11 @@ release/moc_warning.cpp: ../multiplication/mainwindow.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/QString \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QMessageBox \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qmessagebox.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QRadioButton \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qradiobutton.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../multiplication/warning.h \
 		release/moc_predefs.h \
 		../../Qt/5.10.0/mingw53_32/bin/moc.exe
@@ -733,6 +743,11 @@ release/main.o: ../multiplication/main.cpp ../multiplication/mainwindow.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/QString \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QMessageBox \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qmessagebox.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QRadioButton \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qradiobutton.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QApplication \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qapplication.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/qcoreapplication.h \
@@ -867,6 +882,11 @@ release/mainwindow.o: ../multiplication/mainwindow.cpp ../multiplication/mainwin
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/QString \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QMessageBox \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qmessagebox.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QRadioButton \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qradiobutton.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		ui_mainwindow.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/QVariant \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QAction \
@@ -881,13 +901,8 @@ release/mainwindow.o: ../multiplication/mainwindow.cpp ../multiplication/mainwin
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qinputmethod.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QButtonGroup \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qbuttongroup.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QHeaderView \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qheaderview.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qframe.h \
-		../../Qt/5.10.0/mingw53_32/include/QtCore/qabstractitemmodel.h \
-		../../Qt/5.10.0/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QComboBox \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qcombobox.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qstyleoption.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractspinbox.h \
@@ -898,6 +913,18 @@ release/mainwindow.o: ../multiplication/mainwindow.cpp ../multiplication/mainwin
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qstyle.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtabbar.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qrubberband.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qframe.h \
+		../../Qt/5.10.0/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QGridLayout \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qgridlayout.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qlayout.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qboxlayout.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QHeaderView \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qheaderview.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		../../Qt/5.10.0/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QLabel \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qlabel.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QLineEdit \
@@ -912,7 +939,6 @@ release/mainwindow.o: ../multiplication/mainwindow.cpp ../multiplication/mainwin
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qmenubar.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QPushButton \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QStatusBar \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qstatusbar.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QTextEdit \
@@ -1181,11 +1207,16 @@ release/warning.o: ../multiplication/warning.cpp ../multiplication/warning.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/QString \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QMessageBox \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qmessagebox.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qdialog.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QRadioButton \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qradiobutton.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QFileDialog \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qfiledialog.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/qdir.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/qfileinfo.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qdialog.h \
 		ui_warning.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/QVariant \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QAction \
@@ -1217,16 +1248,16 @@ release/warning.o: ../multiplication/warning.cpp ../multiplication/warning.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qstyle.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtabbar.h \
 		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qrubberband.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QPushButton \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QTextEdit \
-		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtextedit.h \
-		../../Qt/5.10.0/mingw53_32/include/QtGui/qtextdocument.h \
-		../../Qt/5.10.0/mingw53_32/include/QtGui/qtextoption.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QLabel \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qlabel.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QLineEdit \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qlineedit.h \
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qtextcursor.h \
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qtextformat.h \
-		../../Qt/5.10.0/mingw53_32/include/QtGui/qpen.h
+		../../Qt/5.10.0/mingw53_32/include/QtGui/qpen.h \
+		../../Qt/5.10.0/mingw53_32/include/QtGui/qtextoption.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QPushButton \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\warning.o ..\multiplication\warning.cpp
 
 release/about.o: ../multiplication/about.cpp ../multiplication/about.h \
@@ -1333,7 +1364,41 @@ release/about.o: ../multiplication/about.cpp ../multiplication/about.h \
 		../../Qt/5.10.0/mingw53_32/include/QtCore/qfiledevice.h \
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qvector2d.h \
 		../../Qt/5.10.0/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_about.h
+		ui_about.h \
+		../../Qt/5.10.0/mingw53_32/include/QtCore/QVariant \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QAction \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qaction.h \
+		../../Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qactiongroup.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QApplication \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qapplication.h \
+		../../Qt/5.10.0/mingw53_32/include/QtCore/qcoreapplication.h \
+		../../Qt/5.10.0/mingw53_32/include/QtCore/qeventloop.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		../../Qt/5.10.0/mingw53_32/include/QtGui/qguiapplication.h \
+		../../Qt/5.10.0/mingw53_32/include/QtGui/qinputmethod.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QButtonGroup \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qbuttongroup.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QHeaderView \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qheaderview.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qframe.h \
+		../../Qt/5.10.0/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		../../Qt/5.10.0/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qstyleoption.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		../../Qt/5.10.0/mingw53_32/include/QtGui/qvalidator.h \
+		../../Qt/5.10.0/mingw53_32/include/QtCore/qregularexpression.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qslider.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractslider.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qstyle.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtabbar.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qrubberband.h \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/QLabel \
+		../../Qt/5.10.0/mingw53_32/include/QtWidgets/qlabel.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\about.o ..\multiplication\about.cpp
 
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 

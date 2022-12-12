@@ -23,25 +23,17 @@ public:
     ~MainWindow();
 
 signals:
-    void signalFromButton(int buttonID);  // Сигнал для передачи номерa нажатой кнопки
 
 private slots:
-    void slotBut1();
-    void slotBut2();
-    void slotBut3();
-
-    //void slotMessage(int buttonID);
-
-    void RandSlot(int buttonID);
-
-
-    //void on_comboBox_activated(int index);
+   // void RandSlot();
+    void on_radioButton_1_clicked(bool checked);
+    void on_radioButton_2_clicked(bool checked);
+    void on_radioButton_3_clicked(bool checked);
 
 private:
     int counter = 0;
     int counterTRUE = 0;
     int counterFALSE = 0;
-    //QButtonGroup * rb_group;
     Ui::MainWindow *ui;
     hint *hint_1;
     About *about_1;
