@@ -28,6 +28,15 @@ hint{
 About{
 	background-color: #AFEEEE;
 }
+rezult{
+	background-color: #20B2AA;
+}
+saverezult{
+	background-color: #AFEEEE;
+}
+help{
+	background-color: #20B2AA;
+}
 QLineEdit{
     background-color: #AFEEEE;
 }

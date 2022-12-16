@@ -36,13 +36,14 @@ public:
     QAction *action_2;
     QAction *action;
     QAction *action_3;
+    QAction *action_4;
+    QAction *action_5;
     QWidget *centralWidget;
     QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
     QLineEdit *lineEdit_3;
     QLabel *label;
     QLabel *label_2;
-    QPushButton *pushButton;
     QTextEdit *textEdit;
     QTextEdit *textEdit_2;
     QTextEdit *textEdit_3;
@@ -58,10 +59,12 @@ public:
     QRadioButton *radioButton_1;
     QRadioButton *radioButton_2;
     QRadioButton *radioButton_3;
+    QPushButton *pushButton;
     QMenuBar *menuBar;
     QMenu *menu;
     QMenu *menu_2;
     QMenu *menu_3;
+    QMenu *menu_4;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -82,6 +85,10 @@ public:
         action->setObjectName(QStringLiteral("action"));
         action_3 = new QAction(MainWindow);
         action_3->setObjectName(QStringLiteral("action_3"));
+        action_4 = new QAction(MainWindow);
+        action_4->setObjectName(QStringLiteral("action_4"));
+        action_5 = new QAction(MainWindow);
+        action_5->setObjectName(QStringLiteral("action_5"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         lineEdit = new QLineEdit(centralWidget);
@@ -104,13 +111,10 @@ public:
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(340, 290, 71, 61));
         label_2->setStyleSheet(QStringLiteral("font: 72pt \"MS Shell Dlg 2\";"));
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(500, 410, 75, 23));
         textEdit = new QTextEdit(centralWidget);
         textEdit->setObjectName(QStringLiteral("textEdit"));
         textEdit->setEnabled(false);
-        textEdit->setGeometry(QRect(100, 120, 431, 71));
+        textEdit->setGeometry(QRect(100, 120, 431, 91));
         textEdit->setStyleSheet(QStringLiteral("font: 16pt \"MS Shell Dlg 2\";"));
         textEdit_2 = new QTextEdit(centralWidget);
         textEdit_2->setObjectName(QStringLiteral("textEdit_2"));
@@ -139,11 +143,11 @@ public:
         textEdit_8 = new QTextEdit(centralWidget);
         textEdit_8->setObjectName(QStringLiteral("textEdit_8"));
         textEdit_8->setEnabled(false);
-        textEdit_8->setGeometry(QRect(100, 190, 431, 41));
+        textEdit_8->setGeometry(QRect(100, 210, 431, 41));
         textEdit_8->setStyleSheet(QStringLiteral("font: 16pt \"MS Shell Dlg 2\";"));
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(10, 410, 75, 23));
+        pushButton_2->setGeometry(QRect(12, 411, 75, 23));
         comboBox = new QComboBox(centralWidget);
         comboBox->addItem(QString());
         comboBox->addItem(QString());
@@ -155,8 +159,9 @@ public:
         comboBox->addItem(QString());
         comboBox->addItem(QString());
         comboBox->addItem(QString());
+        comboBox->addItem(QString());
         comboBox->setObjectName(QStringLiteral("comboBox"));
-        comboBox->setGeometry(QRect(120, 40, 69, 22));
+        comboBox->setGeometry(QRect(150, 40, 69, 22));
         layoutWidget = new QWidget(centralWidget);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
         layoutWidget->setGeometry(QRect(20, 0, 129, 65));
@@ -184,6 +189,9 @@ public:
 
         gridLayout->addWidget(radioButton_3, 2, 0, 1, 1);
 
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(510, 410, 75, 23));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -196,6 +204,8 @@ public:
         menu_2->setObjectName(QStringLiteral("menu_2"));
         menu_3 = new QMenu(menuBar);
         menu_3->setObjectName(QStringLiteral("menu_3"));
+        menu_4 = new QMenu(menuBar);
+        menu_4->setObjectName(QStringLiteral("menu_4"));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -206,10 +216,13 @@ public:
 
         menuBar->addAction(menu->menuAction());
         menuBar->addAction(menu_2->menuAction());
+        menuBar->addAction(menu_4->menuAction());
         menuBar->addAction(menu_3->menuAction());
         menu->addAction(action);
         menu->addAction(action_3);
         menu_2->addAction(action_2);
+        menu_3->addAction(action_4);
+        menu_4->addAction(action_5);
 
         retranslateUi(MainWindow);
 
@@ -222,6 +235,8 @@ public:
         action_2->setText(QApplication::translate("MainWindow", "\320\237\320\276\321\201\320\274\320\276\321\202\321\200\320\265\321\202\321\214 \320\277\320\276\320\264\321\201\320\272\320\260\320\267\320\272\321\203", nullptr));
         action->setText(QApplication::translate("MainWindow", "\320\222\321\213\321\205\320\276\320\264", nullptr));
         action_3->setText(QApplication::translate("MainWindow", "\320\220\320\262\321\202\320\276\321\200\321\213", nullptr));
+        action_4->setText(QApplication::translate("MainWindow", "\320\237\320\276\321\201\320\274\320\276\321\202\321\200\320\265\321\202\321\214 \321\201\320\277\321\200\320\260\320\262\320\272\321\203", nullptr));
+        action_5->setText(QApplication::translate("MainWindow", "\320\237\320\276\321\201\320\274\320\276\321\202\321\200\320\265\321\202\321\214 \321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213", nullptr));
 #ifndef QT_NO_WHATSTHIS
         lineEdit_2->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>", nullptr));
 #endif // QT_NO_WHATSTHIS
@@ -230,25 +245,27 @@ public:
 #endif // QT_NO_WHATSTHIS
         label->setText(QApplication::translate("MainWindow", ".", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "=", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\262\320\265\321\200\320\272\320\260", nullptr));
         pushButton_2->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214", nullptr));
-        comboBox->setItemText(0, QApplication::translate("MainWindow", "1", nullptr));
-        comboBox->setItemText(1, QApplication::translate("MainWindow", "2", nullptr));
-        comboBox->setItemText(2, QApplication::translate("MainWindow", "3", nullptr));
-        comboBox->setItemText(3, QApplication::translate("MainWindow", "4", nullptr));
-        comboBox->setItemText(4, QApplication::translate("MainWindow", "5", nullptr));
-        comboBox->setItemText(5, QApplication::translate("MainWindow", "6", nullptr));
-        comboBox->setItemText(6, QApplication::translate("MainWindow", "7", nullptr));
-        comboBox->setItemText(7, QApplication::translate("MainWindow", "8", nullptr));
-        comboBox->setItemText(8, QApplication::translate("MainWindow", "9", nullptr));
-        comboBox->setItemText(9, QApplication::translate("MainWindow", "10", nullptr));
+        comboBox->setItemText(0, QApplication::translate("MainWindow", "0", nullptr));
+        comboBox->setItemText(1, QApplication::translate("MainWindow", "1", nullptr));
+        comboBox->setItemText(2, QApplication::translate("MainWindow", "2", nullptr));
+        comboBox->setItemText(3, QApplication::translate("MainWindow", "3", nullptr));
+        comboBox->setItemText(4, QApplication::translate("MainWindow", "4", nullptr));
+        comboBox->setItemText(5, QApplication::translate("MainWindow", "5", nullptr));
+        comboBox->setItemText(6, QApplication::translate("MainWindow", "6", nullptr));
+        comboBox->setItemText(7, QApplication::translate("MainWindow", "7", nullptr));
+        comboBox->setItemText(8, QApplication::translate("MainWindow", "8", nullptr));
+        comboBox->setItemText(9, QApplication::translate("MainWindow", "9", nullptr));
+        comboBox->setItemText(10, QApplication::translate("MainWindow", "10", nullptr));
 
         radioButton_1->setText(QApplication::translate("MainWindow", "\320\241\320\273\321\203\321\207\320\260\320\271\320\275\321\213\320\265 \320\277\321\200\320\270\320\274\320\265\321\200\321\213", nullptr));
         radioButton_2->setText(QApplication::translate("MainWindow", "\320\242\320\260\320\261\320\273\320\270\321\206\320\260 \320\235\320\220", nullptr));
         radioButton_3->setText(QApplication::translate("MainWindow", "\320\242\320\260\320\261\320\273\320\270\321\206\320\260 \320\224\320\236", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\262\320\265\321\200\320\272\320\260", nullptr));
         menu->setTitle(QApplication::translate("MainWindow", "\320\234\320\265\320\275\321\216", nullptr));
         menu_2->setTitle(QApplication::translate("MainWindow", "\320\237\320\276\320\264\321\201\320\272\320\260\320\267\320\272\320\260", nullptr));
         menu_3->setTitle(QApplication::translate("MainWindow", "\320\241\320\277\321\200\320\260\320\262\320\272\320\260", nullptr));
+        menu_4->setTitle(QApplication::translate("MainWindow", "\320\242\320\260\320\261\320\273\320\270\321\206\320\260 \321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\320\276\320\262", nullptr));
     } // retranslateUi
 
 };

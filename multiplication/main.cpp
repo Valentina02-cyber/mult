@@ -2,9 +2,13 @@
 #include <QApplication>
 #include <QSplashScreen>
 #include <QPainter>
+#include <QFile>
 #include <QTime>
+#include <QThread>
+#include <QTextCodec>
 
-/*void LoadModules(QSplashScreen* psplash){
+
+void LoadModules(QSplashScreen* psplash){
     QTime time;
     time.start();
     for(int i=0;i<100;){
@@ -19,7 +23,7 @@
                              );
         qApp->processEvents();
     }
-}*/
+}
 
 int main(int argc, char *argv[])
 {
@@ -27,14 +31,12 @@ int main(int argc, char *argv[])
     QFile file("style.css");
     file.open(QFile::ReadOnly);
     a.setStyleSheet(file.readAll());
-    //QSplashScreen splash(QPixmap("Screen1.jpg"));
-    //splash.show();
-    Warning w;
-    //LoadModules(&splash);
-    //splash.finish(&w);
+    QSplashScreen splash(QPixmap("Screen1.jpg"));
+    splash.show();
+    LoadModules(&splash);
+    MainWindow w;
+    splash.finish(&w);
     w.show();
-    MainWindow r;
-    r.show();
 
     return a.exec();
 }

@@ -24,6 +24,7 @@ class Ui_About
 public:
     QLabel *label;
     QLabel *label_2;
+    QLabel *label_3;
 
     void setupUi(QWidget *About)
     {
@@ -35,11 +36,17 @@ public:
         About->setWindowIcon(icon);
         label = new QLabel(About);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(230, 90, 141, 21));
+        label->setGeometry(QRect(240, 90, 141, 21));
         label_2 = new QLabel(About);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setEnabled(false);
-        label_2->setGeometry(QRect(210, 60, 161, 31));
+        label_2->setGeometry(QRect(220, 60, 161, 31));
+        label_3 = new QLabel(About);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(10, 20, 191, 261));
+        label_3->setAcceptDrops(true);
+        label_3->setAutoFillBackground(false);
+        label_3->setScaledContents(true);
 
         retranslateUi(About);
 
@@ -51,6 +58,7 @@ public:
         About->setWindowTitle(QApplication::translate("About", "\320\220\320\262\321\202\320\276\321\200\321\213", nullptr));
         label->setText(QApplication::translate("About", "TextLabel", nullptr));
         label_2->setText(QApplication::translate("About", "TextLabel", nullptr));
+        label_3->setText(QApplication::translate("About", "TextLabel", nullptr));
     } // retranslateUi
 
 };

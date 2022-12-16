@@ -1,11 +1,10 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2022-10-18T23:10:24
+# Project created by QtCreator 2022-12-13T19:16:11
 #
 #-------------------------------------------------
 
-QT       += core gui
-QT += sql
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -29,16 +28,25 @@ SOURCES += \
         mainwindow.cpp \
     hint.cpp \
     warning.cpp \
-    about.cpp
+    about.cpp \
+    help.cpp \
+    rezult.cpp \
+    saverezult.cpp
 
 HEADERS += \
         mainwindow.h \
     hint.h \
     warning.h \
-    about.h
+    about.h \
+    help.h \
+    rezult.h \
+    saverezult.h
 
 FORMS += \
         mainwindow.ui \
-    warning.ui \
     hint.ui \
-    about.ui
+    warning.ui \
+    about.ui \
+    help.ui \
+    rezult.ui \
+    saverezult.ui
