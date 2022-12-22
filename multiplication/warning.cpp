@@ -9,7 +9,6 @@ Warning::Warning(QWidget *parent) :
     ui->dateEdit->setDateTime(QDateTime::currentDateTime());
     this->setFixedSize(522,213);
     this->setWindowFlags(Qt::WindowStaysOnTopHint);
-    connect(ui->pushButton_2, SIGNAL(clicked()), this, SLOT(close()));
     ui->pushButton_2->setShortcut(Qt::Key_Return);
 
 }
@@ -18,9 +17,21 @@ Warning::~Warning()
 {
     delete ui;
 }
-
+void Warning::closeEvent(QCloseEvent* event){
+    if(ui->lineEdit->text()==""){
+        QMessageBox::information(this, "Внимание", "Заполните все поля!");
+         event->ignore();
+        return;
+    }else{
+    event->accept();
+}
+}
 void Warning::on_pushButton_2_clicked()
 {
+    if(ui->lineEdit->text()==""){
+        QMessageBox::information(this, "Внимание", "Заполните все поля!");
+        return;
+    }else{
     QSqlQuery* query = new QSqlQuery();
     query->prepare("INSERT INTO ResultsTable(Firstname, Date) VALUES (:Firstname, :Date)");
     query->bindValue(":Firstname", ui->lineEdit->text());
@@ -28,5 +39,6 @@ void Warning::on_pushButton_2_clicked()
     query->exec();
 
     emit refresh_table();
+    this->close();
+    }
 }
-

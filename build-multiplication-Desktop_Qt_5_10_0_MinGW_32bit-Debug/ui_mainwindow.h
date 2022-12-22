@@ -14,7 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QComboBox>
-#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -54,12 +54,15 @@ public:
     QTextEdit *textEdit_8;
     QPushButton *pushButton_2;
     QComboBox *comboBox;
-    QWidget *layoutWidget;
-    QGridLayout *gridLayout;
+    QPushButton *pushButton;
+    QLabel *label_3;
+    QComboBox *comboBox_2;
+    QLabel *label_4;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
     QRadioButton *radioButton_1;
     QRadioButton *radioButton_2;
     QRadioButton *radioButton_3;
-    QPushButton *pushButton;
     QMenuBar *menuBar;
     QMenu *menu;
     QMenu *menu_2;
@@ -161,37 +164,57 @@ public:
         comboBox->addItem(QString());
         comboBox->addItem(QString());
         comboBox->setObjectName(QStringLiteral("comboBox"));
-        comboBox->setGeometry(QRect(150, 40, 69, 22));
-        layoutWidget = new QWidget(centralWidget);
-        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 0, 129, 65));
-        gridLayout = new QGridLayout(layoutWidget);
-        gridLayout->setSpacing(6);
-        gridLayout->setContentsMargins(11, 11, 11, 11);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        gridLayout->setContentsMargins(0, 0, 0, 0);
-        radioButton_1 = new QRadioButton(layoutWidget);
+        comboBox->setGeometry(QRect(300, 30, 69, 22));
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(510, 410, 75, 23));
+        label_3 = new QLabel(centralWidget);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(210, 30, 91, 20));
+        comboBox_2 = new QComboBox(centralWidget);
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->setObjectName(QStringLiteral("comboBox_2"));
+        comboBox_2->setGeometry(QRect(490, 30, 69, 22));
+        label_4 = new QLabel(centralWidget);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(400, 30, 91, 20));
+        widget = new QWidget(centralWidget);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(20, 10, 551, 19));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        radioButton_1 = new QRadioButton(widget);
         radioButton_1->setObjectName(QStringLiteral("radioButton_1"));
 
-        gridLayout->addWidget(radioButton_1, 0, 0, 1, 1);
+        horizontalLayout->addWidget(radioButton_1);
 
-        radioButton_2 = new QRadioButton(layoutWidget);
+        radioButton_2 = new QRadioButton(widget);
         radioButton_2->setObjectName(QStringLiteral("radioButton_2"));
         radioButton_2->setEnabled(true);
         radioButton_2->setCheckable(true);
 
-        gridLayout->addWidget(radioButton_2, 1, 0, 1, 1);
+        horizontalLayout->addWidget(radioButton_2);
 
-        radioButton_3 = new QRadioButton(layoutWidget);
+        radioButton_3 = new QRadioButton(widget);
         radioButton_3->setObjectName(QStringLiteral("radioButton_3"));
         radioButton_3->setMouseTracking(true);
         radioButton_3->setCheckable(true);
 
-        gridLayout->addWidget(radioButton_3, 2, 0, 1, 1);
+        horizontalLayout->addWidget(radioButton_3);
 
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(510, 410, 75, 23));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -258,10 +281,24 @@ public:
         comboBox->setItemText(9, QApplication::translate("MainWindow", "9", nullptr));
         comboBox->setItemText(10, QApplication::translate("MainWindow", "10", nullptr));
 
-        radioButton_1->setText(QApplication::translate("MainWindow", "\320\241\320\273\321\203\321\207\320\260\320\271\320\275\321\213\320\265 \320\277\321\200\320\270\320\274\320\265\321\200\321\213", nullptr));
-        radioButton_2->setText(QApplication::translate("MainWindow", "\320\242\320\260\320\261\320\273\320\270\321\206\320\260 \320\235\320\220", nullptr));
-        radioButton_3->setText(QApplication::translate("MainWindow", "\320\242\320\260\320\261\320\273\320\270\321\206\320\260 \320\224\320\236", nullptr));
         pushButton->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\262\320\265\321\200\320\272\320\260", nullptr));
+        label_3->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \321\206\320\270\321\204\321\200\321\203", nullptr));
+        comboBox_2->setItemText(0, QApplication::translate("MainWindow", "0", nullptr));
+        comboBox_2->setItemText(1, QApplication::translate("MainWindow", "1", nullptr));
+        comboBox_2->setItemText(2, QApplication::translate("MainWindow", "2", nullptr));
+        comboBox_2->setItemText(3, QApplication::translate("MainWindow", "3", nullptr));
+        comboBox_2->setItemText(4, QApplication::translate("MainWindow", "4", nullptr));
+        comboBox_2->setItemText(5, QApplication::translate("MainWindow", "5", nullptr));
+        comboBox_2->setItemText(6, QApplication::translate("MainWindow", "6", nullptr));
+        comboBox_2->setItemText(7, QApplication::translate("MainWindow", "7", nullptr));
+        comboBox_2->setItemText(8, QApplication::translate("MainWindow", "8", nullptr));
+        comboBox_2->setItemText(9, QApplication::translate("MainWindow", "9", nullptr));
+        comboBox_2->setItemText(10, QApplication::translate("MainWindow", "10", nullptr));
+
+        label_4->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \321\206\320\270\321\204\321\200\321\203", nullptr));
+        radioButton_1->setText(QApplication::translate("MainWindow", "\320\241\320\273\321\203\321\207\320\260\320\271\320\275\321\213\320\265 \320\277\321\200\320\270\320\274\320\265\321\200\321\213", nullptr));
+        radioButton_2->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\270\320\274\320\265\321\200\321\213 \320\275\320\260 \320\272\320\260\320\272\321\203\321\216 \321\206\320\270\321\204\321\200\321\203", nullptr));
+        radioButton_3->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\270\320\274\320\265\321\200\321\213 \320\264\320\276 \320\272\320\260\320\272\320\276\320\271 \321\206\320\270\321\204\321\200\321\213", nullptr));
         menu->setTitle(QApplication::translate("MainWindow", "\320\234\320\265\320\275\321\216", nullptr));
         menu_2->setTitle(QApplication::translate("MainWindow", "\320\237\320\276\320\264\321\201\320\272\320\260\320\267\320\272\320\260", nullptr));
         menu_3->setTitle(QApplication::translate("MainWindow", "\320\241\320\277\321\200\320\260\320\262\320\272\320\260", nullptr));

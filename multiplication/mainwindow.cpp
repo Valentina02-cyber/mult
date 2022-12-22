@@ -184,7 +184,7 @@ void MainWindow::RandSlot(){
         QIntValidator *roll = new QIntValidator(0,101);
         ui->lineEdit->setValidator(roll);
 
-        int W = ui->comboBox->currentText().toInt();
+        int W = ui->comboBox_2->currentText().toInt();
         W++;
 
         W = QRandomGenerator::global()->bounded(1, W);

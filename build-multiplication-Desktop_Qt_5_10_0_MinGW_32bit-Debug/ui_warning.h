@@ -62,12 +62,13 @@ public:
         lineEdit->setReadOnly(false);
         pushButton_2 = new QPushButton(Warning);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(320, 170, 161, 23));
+        pushButton_2->setGeometry(QRect(340, 170, 141, 23));
         label_3 = new QLabel(Warning);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(30, 120, 47, 13));
         dateEdit = new QDateEdit(Warning);
         dateEdit->setObjectName(QStringLiteral("dateEdit"));
+        dateEdit->setEnabled(false);
         dateEdit->setGeometry(QRect(150, 110, 110, 22));
         dateEdit->setCalendarPopup(true);
 

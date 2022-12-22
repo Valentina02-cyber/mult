@@ -5,6 +5,8 @@
 #include <QFileDialog>
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include <QMessageBox>
+#include "qcloseevent"
 
 namespace Ui {
 class Warning;
@@ -16,6 +18,7 @@ class Warning : public QWidget
 
 public:
     explicit Warning(QWidget *parent = 0);
+    virtual void closeEvent(QCloseEvent *event);
     ~Warning();
 
 signals:
